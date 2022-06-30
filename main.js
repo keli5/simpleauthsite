@@ -53,9 +53,9 @@ app.get("/", (req, res) => { // Redirect / to /home
     res.redirect("/home")
 })
 
-/* app.all("*", (req, res) => { // Catch-all 404 handler.. shouldn't be used here?
-    res.status(404).send("404 Not Found")
-}) */
+app.all("*", (req, res) => { // Catch-all 404 handler
+    res.status(404).send({error:"Page not found"})
+})
 
 app.listen(PORT)
 console.log(`Listening on port ${PORT}`)
