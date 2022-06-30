@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Homepage</title>
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="p-5 mb-4 bg-light border-bottom rounded-3">
+        <h1 class="fw-bold display-5">auth system</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <form action="/make_account" method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-group mb-3">
+                            <input type="text" id="username" name="username" minlength="5" maxlength="24">
+                        </div>
+
+                        <label for="password">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="password" id="password" name="password" minlength="8">
+                        </div>
+                        <input type="submit" value="Sign up" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
